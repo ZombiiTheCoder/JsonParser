@@ -1,8 +1,8 @@
 package mapper
 
 import (
+	"JsonParser/parser"
 	"fmt"
-	"jsonparser/parser"
 	"os"
 )
 

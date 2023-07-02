@@ -1,8 +1,8 @@
 package parser
 
 import (
+	"JsonParser/lexer"
 	"fmt"
-	"jsonparser/lexer"
 	"os"
 	"strconv"
 )

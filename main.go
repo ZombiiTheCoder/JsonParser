@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
-	jsonparser "jsonparser/jlib"
+
+	JsonParser "github.com/ZombiiTheCoder/JsonParser/jlib"
 )
 
 func main (){
-	m := jsonparser.MapJson(`
+	m := JsonParser.MapJson(`
 	{
 		"dependencies": {
 		"ejs": "^3.1.6",
@@ -19,9 +20,9 @@ func main (){
 	`) // returns Map of type map[string]any from json source file
 
 	// m.body accesses the contents of the json file
-	// jsonparser.Access changes type any to map[string]any to allow you to look through the map and see values
-	// jsonparser.Access takes a map[string]any for the tree and a string for the key 
-	body := jsonparser.Access(m, "body")
+	// JsonParser.Access changes type any to map[string]any to allow you to look through the map and see values
+	// JsonParser.Access takes a map[string]any for the tree and a string for the key 
+	body := JsonParser.Access(m, "body")
 
-	fmt.Println(jsonparser.Access(body, "d"))
+	fmt.Println(JsonParser.Access(body, "d"))
 }

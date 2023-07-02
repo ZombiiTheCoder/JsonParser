@@ -1,9 +1,9 @@
 package jlib
 
 import (
-	"jsonparser/lexer"
-	"jsonparser/mapper"
-	"jsonparser/parser"
+	"JsonParser/lexer"
+	"JsonParser/mapper"
+	"JsonParser/parser"
 	"log"
 )
 

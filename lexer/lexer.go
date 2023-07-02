@@ -1,8 +1,8 @@
 package lexer
 
 import (
+	"JsonParser/strings"
 	"fmt"
-	"jsonparser/strings"
 	"os"
 	"regexp"
 )
