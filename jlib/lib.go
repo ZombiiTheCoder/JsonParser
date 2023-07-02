@@ -1,9 +1,10 @@
-package jsonparser
+package jlib
 
 import (
 	"jsonparser/lexer"
 	"jsonparser/mapper"
 	"jsonparser/parser"
+	"log"
 )
 
 func MapJson(text string) map[string]any {
@@ -18,5 +19,15 @@ func MapJson(text string) map[string]any {
 
 	mapp := mapper.Mapper{}
 	return mapp.Eval(Ast).(map[string]any)
+
+}
+
+func Access(j map[string]any, text string) map[string]any {
+
+	if j[text] == nil {
+		log.Fatalf("Value \"%v\" Does Not Exist In Map Or Value in map is not a nested map[string]any\n", text)
+	}
+
+	return j[text].(map[string]any)
 
 }
