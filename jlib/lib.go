@@ -1,10 +1,11 @@
 package jlib
 
 import (
-	"JsonParser/lexer"
-	"JsonParser/mapper"
-	"JsonParser/parser"
 	"log"
+
+	"github.com/ZombiiTheCoder/JsonParser/lexer"
+	"github.com/ZombiiTheCoder/JsonParser/mapper"
+	"github.com/ZombiiTheCoder/JsonParser/parser"
 )
 
 func MapJson(text string) map[string]any {

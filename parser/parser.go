@@ -1,9 +1,10 @@
 package parser
 
 import (
-	"JsonParser/lexer"
 	"fmt"
 	"os"
+
+	"github.com/ZombiiTheCoder/JsonParser/lexer"
 )
 
 type Parser struct {

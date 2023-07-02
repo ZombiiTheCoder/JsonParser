@@ -1,9 +1,10 @@
 package mapper
 
 import (
-	"JsonParser/parser"
 	"fmt"
 	"os"
+
+	"github.com/ZombiiTheCoder/JsonParser/parser"
 )
 
 type Mapper struct {}

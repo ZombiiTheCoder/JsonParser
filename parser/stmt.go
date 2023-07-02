@@ -1,10 +1,11 @@
 package parser
 
 import (
-	"JsonParser/lexer"
 	"fmt"
 	"os"
 	"strconv"
+
+	"github.com/ZombiiTheCoder/JsonParser/lexer"
 )
 
 func (s *Parser) ParseStmt() Stmt {

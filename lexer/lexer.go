@@ -1,10 +1,11 @@
 package lexer
 
 import (
-	"JsonParser/strings"
 	"fmt"
 	"os"
 	"regexp"
+
+	"github.com/ZombiiTheCoder/JsonParser/strings"
 )
 
 type Lexer struct {
